@@ -34,12 +34,22 @@ body {
   font-weight: bold;
 }
 
-h1 > span {
-  margin-left: 20px;
+#date > span {
   color: white;
 }
 
-h1,
+h1 {
+  color: white;
+}
+
+#faltam {
+  font-size: 60px;
+}
+
+h1 > span {
+  margin-left: 20px;
+}
+
 #days {
   color: #fec955;
 }
