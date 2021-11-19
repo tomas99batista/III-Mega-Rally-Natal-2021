@@ -6,11 +6,11 @@ function getTimeRemaining(deadline) {
   const days = Math.floor(total / (1000 * 60 * 60 * 24));
 
   return {
-    total: total != NaN ? total : 0,
-    days: days != NaN ? days : 0,
-    hours: hours != NaN ? hours : 0,
-    minutes: minutes != NaN ? minutes : 0,
-    seconds: seconds != NaN ? seconds : 0,
+    total,
+    days,
+    hours,
+    minutes,
+    seconds,
   };
 }
 
@@ -18,9 +18,10 @@ function updateCounter() {
   const timeRemaining = getTimeRemaining("2021/12/18 15:00:00");
 
   if (timeRemaining.total <= 0) {
-    const title = document.querySelector("h1");
+    const title = document.querySelector("#faltam");
     title.textContent = "JÁ COMEÇOU!!! 🍻";
     title.style.color = "#fec955";
+    document.querySelector("#countdown").style.display = "none";
     return;
   }
 
@@ -44,6 +45,10 @@ function updateCounter() {
     timeRemaining.seconds
   } SEGUNDO${timeRemaining.seconds != 1 ? "S" : ""}`;
 }
+
+document.querySelector("#logo").addEventListener("click", () => {
+  window.location.href = "https://www.youtube.com/watch?v=_vaJSH7lQFs";
+});
 
 updateCounter();
 setInterval(() => updateCounter(), 1000);

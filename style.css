@@ -27,6 +27,7 @@ body {
 .content > img#logo {
   width: 600px;
   height: auto;
+  cursor: pointer;
 }
 
 #date {
@@ -36,26 +37,14 @@ body {
 }
 
 #date > span {
-  color: white;
-  background-color: rgb(255, 99, 99);
-  margin-left: 0;
-}
-
-h1 {
-  color: white;
+  margin-left: 5px;
 }
 
 #faltam {
-  font-size: 46px;
+  font-size: 40px;
   background-color: #4466b0;
   color: white;
-}
-
-h1 > span {
-  margin-left: 15px;
-  background-color: #fec955;
-  padding: 5px 15px;
-  color: #4466b0;
+  margin-top: -10px;
 }
 
 .snow {
@@ -96,7 +85,7 @@ div#countdown > div#days {
   }
 
   #faltam {
-    font-size: 15px;
+    font-size: 10px;
     background-color: #4466b0;
     color: white;
   }
