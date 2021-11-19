@@ -25,22 +25,22 @@ function updateCounter() {
   }
 
   // update days
-  document.querySelector("#days").textContent = `${timeRemaining.days} DIA${
+  document.querySelector("#days").innerHTML = `${timeRemaining.days} DIA${
     timeRemaining.days != 1 ? "S" : ""
   }`;
 
   // update hours
-  document.querySelector("#hours").textContent = `${timeRemaining.hours} HORA${
+  document.querySelector("#hours").innerHTML = `${timeRemaining.hours} HORA${
     timeRemaining.hours != 1 ? "S" : ""
   }`;
 
   // update minutes
-  document.querySelector("#minutes").textContent = `${
+  document.querySelector("#minutes").innerHTML = `${
     timeRemaining.minutes
   } MINUTO${timeRemaining.minutes != 1 ? "S" : ""}`;
 
   // update seconds
-  document.querySelector("#seconds").textContent = `${
+  document.querySelector("#seconds").innerHTML = `${
     timeRemaining.seconds
   } SEGUNDO${timeRemaining.seconds != 1 ? "S" : ""}`;
 }
