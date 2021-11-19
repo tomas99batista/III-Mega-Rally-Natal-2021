@@ -25,24 +25,24 @@ function updateCounter() {
   }
 
   // update days
-  document.querySelector("#days").textContent = `${timeRemaining.days} dia${
-    timeRemaining.days != 1 ? "s" : ""
+  document.querySelector("#days").textContent = `${timeRemaining.days} DIA${
+    timeRemaining.days != 1 ? "S" : ""
   }`;
 
   // update hours
-  document.querySelector("#hours").textContent = `${timeRemaining.hours} hora${
-    timeRemaining.hours != 1 ? "s" : ""
+  document.querySelector("#hours").textContent = `${timeRemaining.hours} HORA${
+    timeRemaining.hours != 1 ? "S" : ""
   }`;
 
   // update minutes
   document.querySelector("#minutes").textContent = `${
     timeRemaining.minutes
-  } minuto${timeRemaining.minutes != 1 ? "s" : ""}`;
+  } MINUTO${timeRemaining.minutes != 1 ? "S" : ""}`;
 
   // update seconds
   document.querySelector("#seconds").textContent = `${
     timeRemaining.seconds
-  } segundo${timeRemaining.seconds != 1 ? "s" : ""}`;
+  } SEGUNDO${timeRemaining.seconds != 1 ? "S" : ""}`;
 }
 
 updateCounter();
