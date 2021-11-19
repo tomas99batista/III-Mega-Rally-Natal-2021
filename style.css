@@ -87,7 +87,7 @@ div#countdown > div#days {
   }
 
   div#countdown > div {
-    font-size: 5px;
+    font-size: 6px;
   }
 
   .content > img#logo {
@@ -103,11 +103,5 @@ div#countdown > div#days {
 
   audio {
     margin-top: 10px;
-  }
-
-  div#countdown > div#minutes::after,
-  div#countdown > div#seconds::after {
-    content: "\a";
-    white-space: pre;
   }
 }
