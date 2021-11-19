@@ -7,8 +7,8 @@ body {
   display: table;
   background-color: #4466b0;
   font-family: "Montserrat", sans-serif;
-  font-size: 26px;
-  overflow: hidden;
+  font-size: 18px;
+  overflow: auto;
   filter: drop-shadow(0 0 10px white);
 }
 
@@ -30,12 +30,15 @@ body {
 }
 
 #date {
-  color: #fec955;
-  font-weight: bold;
+  background-color: rgb(255, 99, 99);
+  padding: 5px 15px;
+  color: white;
 }
 
 #date > span {
   color: white;
+  background-color: rgb(255, 99, 99);
+  margin-left: 0;
 }
 
 h1 {
@@ -43,15 +46,22 @@ h1 {
 }
 
 #faltam {
-  font-size: 60px;
+  font-size: 46px;
+  background-color: #4466b0;
+  color: white;
 }
 
 h1 > span {
   margin-left: 20px;
+  background-color: #fec955;
+  padding: 5px 15px;
+  color: #4466b0;
 }
 
 #days {
-  color: #fec955;
+  background-color: rgb(255, 99, 99);
+  padding: 5px 15px;
+  color: white;
 }
 
 .snow {
@@ -60,4 +70,48 @@ h1 > span {
   height: 10px;
   background: #fff;
   border-radius: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .content > img#logo {
+    width: 400px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 15px;
+  }
+  
+  .content > img#logo {
+    width: 300px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 9px;
+  }
+
+  .content > img#logo {
+    width: 300px;
+    height: auto;
+  }
+
+  #faltam {
+    font-size: 15px;
+    background-color: #4466b0;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  audio {
+    margin-top: 10px;
+  }
 }

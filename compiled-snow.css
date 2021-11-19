@@ -170,8 +170,8 @@
   animation-delay: -3s;
 }
 .layer2 {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 0.6rem;
+  height: 0.6rem;
   filter: blur(3px);
   box-shadow: 5.9vw 16.9vh 0 -0.34rem#fff, 40.9vw 9vh 0 -0.13rem#fff,
     46.5vw 5.6vh 0 -0.34rem#fff, 27.4vw 10.8vh 0 -0.47rem#fff,
@@ -329,8 +329,8 @@
   animation-delay: -4s;
 }
 .layer3 {
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 0.4rem;
+  height: 0.4rem;
   filter: blur(6px);
   box-shadow: 36.5vw 87.9vh 0 -0.46rem#fff, 54.9vw 19.9vh 0 -0.39rem#fff,
     40.5vw 94.6vh 0 -0.18rem#fff, 53.6vw 65.2vh 0 -0.39rem#fff,
