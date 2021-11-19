@@ -7,7 +7,7 @@ body {
   display: table;
   background-color: #4466b0;
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   overflow: auto;
   filter: drop-shadow(0 0 10px white);
 }
@@ -52,16 +52,10 @@ h1 {
 }
 
 h1 > span {
-  margin-left: 20px;
+  margin-left: 15px;
   background-color: #fec955;
   padding: 5px 15px;
   color: #4466b0;
-}
-
-#days {
-  background-color: rgb(255, 99, 99);
-  padding: 5px 15px;
-  color: white;
 }
 
 .snow {
@@ -70,6 +64,21 @@ h1 > span {
   height: 10px;
   background: #fff;
   border-radius: 100%;
+}
+
+div#countdown > div {
+  font-size: 30px;
+  margin: -20px 10px 20px 10px;
+  background-color: #fec955;
+  padding: 5px 15px;
+  color: #4466b0;
+  display: inline-block;
+}
+
+div#countdown > div#days {
+  background-color: rgb(255, 99, 99);
+  padding: 5px 15px;
+  color: white;
 }
 
 @media screen and (max-width: 500px) {
@@ -86,10 +95,15 @@ h1 > span {
     font-size: 15px;
     background-color: #4466b0;
     color: white;
-    margin-bottom: 10px;
   }
 
   audio {
     margin-top: 10px;
+  }
+
+  div#countdown > div#minutes::after,
+  div#countdown > div#seconds::after {
+    content: "\a";
+    white-space: pre;
   }
 }
