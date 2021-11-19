@@ -6,7 +6,7 @@ body {
   height: 100vh;
   display: table;
   background-color: #4466b0;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-size: 26px;
   overflow: hidden;
   filter: drop-shadow(0 0 10px white);
@@ -29,8 +29,9 @@ body {
   height: auto;
 }
 
-h2 {
-  color: #4cf9ff;
+#date {
+  color: #fec955;
+  font-weight: bold;
 }
 
 h1 > span {
