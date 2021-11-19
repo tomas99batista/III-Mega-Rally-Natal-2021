@@ -6,11 +6,11 @@ function getTimeRemaining(deadline) {
   const days = Math.floor(total / (1000 * 60 * 60 * 24));
 
   return {
-    total,
-    days,
-    hours,
-    minutes,
-    seconds,
+    total: total != NaN ? total : 0,
+    days: days != NaN ? days : 0,
+    hours: hours != NaN ? hours : 0,
+    minutes: minutes != NaN ? minutes : 0,
+    seconds: seconds != NaN ? seconds : 0,
   };
 }
 
