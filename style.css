@@ -74,11 +74,11 @@ h1 > span {
 
 @media screen and (max-width: 500px) {
   h1 {
-    font-size: 8px;
+    font-size: 5px;
   }
 
   .content > img#logo {
-    width: 300px;
+    width: 200px;
     height: auto;
   }
 
@@ -91,20 +91,5 @@ h1 > span {
 
   audio {
     margin-top: 10px;
-  }
-
-  .layer1 {
-    width: 0.2rem;
-    height: 0.2rem;
-  }
-
-  .layer2 {
-    width: 0.1rem;
-    height: 0.1rem;
-  }
-
-  .layer3 {
-    width: 0.05rem;
-    height: 0.05rem;
   }
 }
