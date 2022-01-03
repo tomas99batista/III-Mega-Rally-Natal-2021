@@ -15,7 +15,7 @@ function getTimeRemaining(deadline) {
 }
 
 function updateCounter() {
-  const timeRemaining = getTimeRemaining("2021/12/18 15:00:00");
+  const timeRemaining = getTimeRemaining("2022/01/29 15:00:00");
 
   if (timeRemaining.total <= 0) {
     const title = document.querySelector("#faltam");
